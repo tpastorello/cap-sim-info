@@ -13,22 +13,18 @@ npx cap sync
 
 <docgen-index>
 
-* [`getSimInfo()`](#getSimInfo)
+* [`getSimInfo()`](#getsiminfo)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### getSimInfo(...)
+### getSimInfo()
 
 ```typescript
 getSimInfo() => Promise<{ value: string; }>
 ```
-
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **no params** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
