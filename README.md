@@ -13,7 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-* [`getSimInfo(...)`](#getSimInfo)
+* [`getSimInfo()`](#getSimInfo)
 
 </docgen-index>
 
@@ -28,7 +28,7 @@ getSimInfo() => Promise<{ value: string; }>
 
 | Param         | Type                            |
 | ------------- | ------------------------------- |
-| **``**        | <code>{ value: string; }</code> |
+| **no params** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
