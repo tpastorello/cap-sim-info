@@ -1,6 +1,6 @@
 {
   "name": "cap-sim-info",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Get SIM Info",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -76,5 +76,9 @@
     "android": {
       "src": "android"
     }
-  }
+  },
+  "directories": {
+    "example": "example"
+  },
+  "homepage": "https://github.com/tpastorello/cap-sim-info.git#readme"
 }
