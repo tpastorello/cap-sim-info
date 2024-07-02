@@ -4,8 +4,8 @@ import android.util.Log;
 
 public class SimInfo {
 
-    public String echo(String value) {
-        Log.i("Echo", value);
+    public String getSimInfo(String value) {
+        Log.i("GetSimInfo", value);
         return value;
     }
 }
