@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
-
 import type { SimInfoPlugin } from './definitions';
 
 export class SimInfoWeb extends WebPlugin implements SimInfoPlugin {
-  async getSimInfo(): Promise<{ value: string }> {
-    console.log('getSimInfo');
-    return { value: 'Sim information goes here' }; // ou o valor que você deseja retornar
+  // Implementa o método getSimInfo para a web
+  async getSimInfo(): Promise<{ phoneNumber: string | null }> {
+    console.warn('SimInfo is not available on web.');
+    return { phoneNumber: null }; // Retorna null já que não é possível acessar o SIM na web
   }
 }

@@ -1,6 +1,8 @@
+### vinteum.com
 # cap-sim-info
 
-Get SIM Info
+Get SIM Card Info.
+For Capacitor.
 
 ## Install
 
@@ -23,10 +25,10 @@ npx cap sync
 ### getSimInfo()
 
 ```typescript
-getSimInfo() => Promise<{ value: string; }>
+getSimInfo() => Promise<{ phoneNumber: string | null; }>
 ```
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ phoneNumber: string | null; }&gt;</code>
 
 --------------------
 

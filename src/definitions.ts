@@ -1,3 +1,3 @@
 export interface SimInfoPlugin {
-  getSimInfo(): Promise<{ value: string }>;
+  getSimInfo(): Promise<{ phoneNumber: string | null }>;
 }

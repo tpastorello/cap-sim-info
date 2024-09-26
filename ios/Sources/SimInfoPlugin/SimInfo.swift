@@ -1,8 +1,10 @@
 import Foundation
+import Capacitor
 
-@objc public class SimInfo: NSObject {
-    @objc public func echo(_ value: String) -> String {
-        print(value)
-        return value
+
+@objc(SimInfoPlugin)
+public class SimInfoPlugin: CAPPlugin {
+    @objc func getSimInfo(_ call: CAPPluginCall) {        
+        call.reject("SIM info not accessible on iOS")
     }
 }

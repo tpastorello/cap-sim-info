@@ -1,7 +1,7 @@
 {
   "name": "cap-sim-info",
-  "version": "0.0.5",
-  "description": "Get SIM Info",
+  "version": "0.0.21",
+  "description": "Get SIM Card Info. For Capacitor.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -15,14 +15,14 @@
     "Package.swift",
     "CapSimInfo.podspec"
   ],
-  "author": "Tiago Pastorello <tiago@vinteum.com>",
+  "author": "Tiago Pastorello",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tpastorello/cap-sim-info.git.git"
+    "url": "git+https://github.com/tpastorello/cap-sim-info.git"
   },
   "bugs": {
-    "url": "https://github.com/tpastorello/cap-sim-info.git/issues"
+    "url": "https://github.com/tpastorello/cap-sim-info/issues"
   },
   "keywords": [
     "capacitor",
@@ -37,7 +37,7 @@
     "lint": "npm run eslint && npm run prettier -- --check && npm run swiftlint -- lint",
     "fmt": "npm run eslint -- --fix && npm run prettier -- --write && npm run swiftlint -- --fix --format",
     "eslint": "eslint . --ext ts",
-    "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
+    "prettier": "prettier \"**/*.{css,html,ts,js,java}\" --plugin=prettier-plugin-java",
     "swiftlint": "node-swiftlint",
     "docgen": "docgen --api SimInfoPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
@@ -51,11 +51,11 @@
     "@capacitor/docgen": "^0.2.2",
     "@capacitor/ios": "^6.0.0",
     "@ionic/eslint-config": "^0.4.0",
-    "@ionic/prettier-config": "^1.0.1",
+    "@ionic/prettier-config": "^4.0.0",
     "@ionic/swiftlint-config": "^1.1.2",
     "eslint": "^8.57.0",
-    "prettier": "~2.3.0",
-    "prettier-plugin-java": "~1.0.2",
+    "prettier": "^3.3.3",
+    "prettier-plugin-java": "^2.6.4",
     "rimraf": "^3.0.2",
     "rollup": "^2.32.0",
     "swiftlint": "^1.0.1",
@@ -76,9 +76,5 @@
     "android": {
       "src": "android"
     }
-  },
-  "directories": {
-    "example": "example"
-  },
-  "homepage": "https://github.com/tpastorello/cap-sim-info.git#readme"
+  }
 }

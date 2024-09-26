@@ -1,6 +1,6 @@
 {
   "appId": "com.example.plugin",
-  "appName": "example",
+  "appName": "example-app",
   "webDir": "dist",
   "plugins": {
     "SplashScreen": {
