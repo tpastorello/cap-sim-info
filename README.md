@@ -4,6 +4,9 @@
 Get SIM Card Info.
 For Capacitor.
 
+# Npm:
+https://www.npmjs.com/package/cap-sim-info
+
 ## Install
 
 ```bash
