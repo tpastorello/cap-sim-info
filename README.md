@@ -4,7 +4,7 @@
 Get SIM Card Info.
 For Capacitor.
 
-# Npm:
+# npm:
 https://www.npmjs.com/package/cap-sim-info
 
 ## Install
