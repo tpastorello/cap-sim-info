@@ -14,6 +14,12 @@ npm install cap-sim-info
 npx cap sync
 ```
 
+## Android Manifest 
+
+```xml
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+```
+
 ## API
 
 <docgen-index>
@@ -24,6 +30,16 @@ npx cap sync
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### Sample:
+
+```typescript
+import { SimInfo } from 'cap-sim-info';
+
+const info = await SimInfo.getSimInfo();
+
+console.log(info);
+```
 
 ### getSimInfo()
 
