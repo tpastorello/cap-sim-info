@@ -1,6 +1,6 @@
 {
   "name": "cap-sim-info",
-  "version": "0.0.22",
+  "version": "0.1.5",
   "description": "Get SIM Card Info. For Capacitor.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
