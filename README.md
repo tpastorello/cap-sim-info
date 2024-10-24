@@ -22,23 +22,16 @@ npx cap sync
 
 ## API
 
-<docgen-index>
-
 * [`getSimInfo()`](#getsiminfo)
-
-</docgen-index>
-
-<docgen-api>
-<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
 ### Sample:
 
 ```typescript
 import { SimInfo } from 'cap-sim-info';
 
-const info = await SimInfo.getSimInfo();
+const sims = await SimInfo.getSimInfo();
 
-console.log(info);
+console.log(sims);
 ```
 
 ### getSimInfo()
@@ -47,8 +40,26 @@ console.log(info);
 getSimInfo() => Promise<{ phoneNumber: string | null; }>
 ```
 
-**Returns:** <code>Promise&lt;{ phoneNumber: string | null; }&gt;</code>
-
---------------------
-
-</docgen-api>
+## Returns:
+```json
+{
+    "simInfo": [
+        {
+            "carrierName": "VIVO",
+            "displayName": "VIVO",
+            "countryIso": "br",
+            "iccId": "895510953571576",
+            "simSlotIndex": 0,
+            "phoneNumber": "+5546999XXXXXX"
+        },
+        {
+            "carrierName": "Vinteum Telecom",
+            "displayName": "Vinteum Telecom",
+            "countryIso": "usa",
+            "iccId": "895506474390",
+            "simSlotIndex": 1,
+            "phoneNumber": "+14912813"
+        }
+    ]
+}
+```
